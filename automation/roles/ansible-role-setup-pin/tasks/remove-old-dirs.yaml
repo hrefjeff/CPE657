@@ -1,0 +1,5 @@
+---
+- name: Remove old directories
+  file:
+    path: ~/pin
+    state: absent

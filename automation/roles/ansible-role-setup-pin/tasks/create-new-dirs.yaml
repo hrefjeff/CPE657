@@ -1,0 +1,6 @@
+---
+- name: Create directory structure
+  file:
+    path: ~/pin
+    state: directory
+    mode: 0755
