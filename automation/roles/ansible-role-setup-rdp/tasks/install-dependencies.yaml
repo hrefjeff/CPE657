@@ -7,6 +7,7 @@
   become: yes  # Equivalent to running the command with 'sudo'
   apt:
     name:
+      - firefox
       - xfce4
       - xfce4-goodies
       - xrdp
