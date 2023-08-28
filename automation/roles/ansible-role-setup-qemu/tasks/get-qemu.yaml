@@ -2,7 +2,7 @@
 - name: Clone QEMU repository
   git:
     repo: git@gitlab.com:PenceGL/qemu-cpe-657.git
-    dest: ~/
+    dest: ~/qemu
     version: master  # You can specify a different branch, tag, or commit hash here
     accept_hostkey: yes
     key_file: ~/.ssh/id_rsa  # Point to the SSH key that you copied over

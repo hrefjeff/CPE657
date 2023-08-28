@@ -1,7 +1,7 @@
 ---
 - name: Remove old directories
   file:
-    path: ~/qemu-cpe-657
+    path: ~/qemu
     state: absent
 - name: Remove old apt packages
   become: yes  # Equivalent to running the command with 'sudo'
