@@ -4,7 +4,7 @@
   apt:
     update_cache: yes
 - name: Install required packages
-  become: yes  # Equivalent to running the command with 'sudo'
+  become: yes
   apt:
     name:
       - git
@@ -16,10 +16,14 @@
       - flex
       - bison
       - python3-pip
+      - python3-venv
+      - python3-sphinx
     state: present
 - name: Install python modules
+  become: yes
   pip:
     name:
       - ninja
+      - sphinx-rtd-theme
     state: present
     executable: pip3 # Use pip3 for python3

@@ -4,5 +4,6 @@
 - name: Set up workspace
   hosts: local
   roles:
-#    - ansible-role-setup-pin
+    - ansible-role-setup-rdp
+    - ansible-role-setup-pin
     - ansible-role-setup-qemu
