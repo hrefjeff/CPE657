@@ -1,9 +1,9 @@
 ---
 - name: Remove old stuff to start fresh
-    include_tasks: remove-old.yaml
+  include_tasks: remove-old.yaml
 
 - name: Install dependencies
-    include_tasks: install-dependencies.yaml
+  include_tasks: install-dependencies.yaml
 
 - name: Clone QEMU repository
-    include_tasks: get-qemu.yaml
+  include_tasks: get-qemu.yaml
