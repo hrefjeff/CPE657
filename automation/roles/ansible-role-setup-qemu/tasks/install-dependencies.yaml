@@ -1,0 +1,25 @@
+---
+- name: Update apt package list
+  become: yes  # Equivalent to running the command with 'sudo'
+  apt:
+    update_cache: yes
+- name: Install required packages
+  become: yes  # Equivalent to running the command with 'sudo'
+  apt:
+    name:
+      - git
+      - libglib2.0-dev
+      - libfdt-dev
+      - libpixman-1-dev
+      - zlib1g-dev
+      - ninja-build
+      - flex
+      - bison
+      - python3-pip
+    state: present
+- name: Install python modules
+  pip:
+    name:
+      - ninja
+    state: present
+    executable: pip3 # Use pip3 for python3

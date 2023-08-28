@@ -1,0 +1,6 @@
+---
+- name: Remove old stuff to start fresh
+  include_tasks: remove-old.yaml
+
+- name: Install dependencies
+  include_tasks: install-dependencies.yaml

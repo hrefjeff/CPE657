@@ -1,0 +1,19 @@
+---
+- name: Remove old directories
+  file:
+    path: ~/qemu-cpe-657
+    state: absent
+- name: Remove old apt packages
+  become: yes  # Equivalent to running the command with 'sudo'
+  apt:
+    name:
+      - git
+      - libglib2.0-dev
+      - libfdt-dev
+      - libpixman-1-dev
+      - zlib1g-dev
+      - ninja-build
+      - flex
+      - bison
+      - python3-pip
+    state: absent
