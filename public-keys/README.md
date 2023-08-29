@@ -11,3 +11,5 @@ Let the tool generate the keypair in the ~/.ssh folder
 # 2. Upload key to gitlab
 
 Navigate to https://gitlab.com/-/profile/keys and upload your id_rsa.pub
+
+Navigate to https://github.com/settings/keys and upload your id_rsa.pub
