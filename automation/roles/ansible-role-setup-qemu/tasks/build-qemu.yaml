@@ -1,16 +1,16 @@
 ---
-- name: Create build directory
+- name: Create native debug build directory
   file:
-    path: ~/qemu/build
+    path: ~/qemu/bin/debug/native
     state: directory
     mode: 0755
 
-- name: Configure QEMU
+- name: Configure QEMU in debug mode
   shell:
-    chdir: ~/qemu/build
-    cmd: ../configure
+    chdir: ~/qemu/bin/debug/native
+    cmd: ../../../configure --enable-debug
 
 - name: Make
   shell:
-    chdir: ~/qemu/build
+    chdir: ~/qemu/bin/debug/native
     cmd: make
