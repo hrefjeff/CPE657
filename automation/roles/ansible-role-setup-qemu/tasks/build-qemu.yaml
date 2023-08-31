@@ -13,4 +13,4 @@
 - name: Make
   shell:
     chdir: ~/qemu/bin/debug/native
-    cmd: make
+    cmd: make -j4
