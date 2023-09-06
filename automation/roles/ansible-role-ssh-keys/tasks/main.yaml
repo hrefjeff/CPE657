@@ -1,0 +1,3 @@
+---
+- name: Generate SSH Keys
+  include_tasks: generate-keys.yaml

@@ -1,0 +1,29 @@
+---
+- name: Generate SSH Keys
+  openssh_keypair:
+    path: ~/.ssh/id_rsa
+    type: rsa
+    size: 4096
+    state: present
+    force: no
+
+- name: Print contents of id_rsa.pub
+  slurp:
+    src: "~/.ssh/id_rsa.pub"
+  register: pub_key_contents
+
+- name: Display id_rsa.pub contents
+  debug:
+    msg: "{{ (pub_key_contents['content'] | b64decode).strip() }}"
+
+- name: Print msg of where to upload
+  debug:
+    msg:
+      - "================================"
+      - "=========== MESSAGE ============"
+      - "================================"
+      - "Upload contents of id_rsa.pub to"
+      - "https://gitlab.com/-/profile/keys"
+      - "&"
+      - "https://github.com/settings/keys"
+      - "================================"
