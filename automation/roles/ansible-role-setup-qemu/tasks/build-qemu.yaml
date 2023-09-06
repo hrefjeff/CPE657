@@ -8,7 +8,7 @@
 - name: Configure QEMU in debug mode
   shell:
     chdir: ~/qemu/build
-    cmd: ../../../configure --enable-debug --target-list=x86_64-softmmu
+    cmd: ../configure --enable-debug --target-list=x86_64-softmmu
 
 - name: Make
   shell:
