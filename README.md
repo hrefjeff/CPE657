@@ -7,6 +7,7 @@ George, Amber, Harsimran, Jeffrey
 ## Documentation Links
 
 - [QEMU Documentation](https://wiki.qemu.org/Hosts/Linux)
+- [Bodhi Linux Download](https://drive.google.com/file/d/11w1kItSrVW-saXxTpnfTrw7358UcNS5t/view)
 
 ## Frequently Used Commands
 
