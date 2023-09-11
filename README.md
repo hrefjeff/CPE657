@@ -32,6 +32,8 @@ George, Amber, Harsimran, Jeffrey
   -device AC97
 ```
 Meanings of all the arguments:
+
+```
 -m 2G → 2GB RAM
 -smp 1 → 1CPUs
 -hda <NAME OF IMG>.qcow2 → our 20GB variable-size disk
@@ -41,3 +43,4 @@ Meanings of all the arguments:
 -device virtio-net-pci,netdev=net0 → network card
 -vga qxl → graphics card
 -device AC97 → sound card
+```
