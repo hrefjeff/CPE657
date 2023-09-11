@@ -5,6 +5,7 @@
 Install Ansible on your machine.
 
 ```bash
+sudo apt update && sudo apt upgrade -y
 sudo apt install ansible
 ```
 
