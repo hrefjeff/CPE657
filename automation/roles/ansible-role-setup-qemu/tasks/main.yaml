@@ -8,5 +8,8 @@
 - name: Clone QEMU repository
   include_tasks: get-qemu.yaml
 
-- name: Build QEMU
-  include_tasks: build-qemu.yaml
+- name: Build QEMU Softmmu
+  include_tasks: build-qemu-softmmu.yaml
+
+- name: Build QEMU Softmmu
+  include_tasks: build-qemu-linux-user.yaml

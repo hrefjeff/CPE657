@@ -1,0 +1,16 @@
+---
+- name: Create native debug build directory
+  file:
+    path: ~/qemu/build-linux-user
+    state: directory
+    mode: 0755
+
+- name: Configure QEMU Linux User in Debug Mode
+  shell:
+    chdir: ~/qemu/build-linux-user
+    cmd: ../configure --enable-debug --target-list=x86_64-linux-user
+
+- name: Make Linux User
+  shell:
+    chdir: ~/qemu/build-linux-user
+    cmd: make -j4

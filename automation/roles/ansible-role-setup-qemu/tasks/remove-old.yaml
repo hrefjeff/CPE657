@@ -7,7 +7,6 @@
   become: yes  # Equivalent to running the command with 'sudo'
   apt:
     name:
-      - git
       - libglib2.0-dev
       - libfdt-dev
       - libpixman-1-dev
