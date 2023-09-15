@@ -8,6 +8,7 @@ George, Amber, Harsimran, Jeffrey
 
 - [QEMU Documentation](https://wiki.qemu.org/Hosts/Linux)
 - [Bodhi Linux Download](https://drive.google.com/file/d/11w1kItSrVW-saXxTpnfTrw7358UcNS5t/view)
+- [Arch Linux Download](https://mirrors.mit.edu/archlinux/iso/2023.09.01/)
 
 ## Frequently Used Commands
 
@@ -28,8 +29,7 @@ George, Amber, Harsimran, Jeffrey
   -cdrom ~/archlinux-2023.08.01-x86_64.iso                       \
   -netdev user,id=net0,net=192.168.0.0/24,dhcpstart=192.168.0.9  \
   -device virtio-net-pci,netdev=net0                             \
-  -vga qxl                    \
-  -device AC97
+  -vga qxl
 ```
 Meanings of all the arguments:
 
@@ -42,5 +42,4 @@ Meanings of all the arguments:
 -netdev user,id=net0,net=192.168.0.0/24,dhcpstart=192.168.0.9 → NAT with DHCP
 -device virtio-net-pci,netdev=net0 → network card
 -vga qxl → graphics card
--device AC97 → sound card
 ```
