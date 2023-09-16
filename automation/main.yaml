@@ -4,6 +4,6 @@
 - name: Set up workspace
   hosts: local
   roles:
-    - ansible-role-ssh-keys
-    - ansible-role-setup-rdp
+    #- ansible-role-ssh-keys
+    #- ansible-role-setup-rdp
     - ansible-role-setup-qemu
