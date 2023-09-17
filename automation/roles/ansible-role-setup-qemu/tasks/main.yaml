@@ -4,12 +4,3 @@
 
 - name: Install dependencies
   include_tasks: install-dependencies.yaml
-
-- name: Clone QEMU repository
-  include_tasks: get-qemu.yaml
-
-- name: Build QEMU Softmmu
-  include_tasks: build-qemu-softmmu.yaml
-
-- name: Build QEMU Softmmu
-  include_tasks: build-qemu-linux-user.yaml

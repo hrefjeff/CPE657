@@ -1,9 +1,0 @@
----
-- name: Remove old directories
-  include_tasks: remove-old-dirs.yaml
-
-- name: Create new directories
-  include_tasks: create-new-dirs.yaml
-
-- name: Download pin
-  include_tasks: download-pin.yaml
